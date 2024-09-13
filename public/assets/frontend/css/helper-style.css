@@ -1,0 +1,510 @@
+/******************************
+
+    00 - Helper CSS
+    01 - Easier Mode
+
+******************************/
+
+/*----------------------------------------*/
+/*  00 - Helper CSS
+/*----------------------------------------*/
+/* start direct theme css */
+.custom-max-width-110 {
+    max-width: 110px;
+}
+/* end direct theme css */
+
+.easier-custom-font-size-24 {
+    font-size: 24px;
+}
+.easier-pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+.easier-line-height-0 {
+    line-height: 0 !important;
+}
+
+.custom-color-orange {
+    color: #ff4500;
+}
+
+.custom-font-size-42 {
+    font-size: 42px;
+}
+
+.custom-pure-button {
+    border: none;
+    background-color: transparent;
+}
+
+.custom-max-width-80 {
+    max-width: 80px;
+}
+
+.custom-max-width-200 {
+    max-width: 200px;
+}
+
+/* side whatsapp button */
+.btn-whatsapp-pulse {
+    background-color: var(--side-button-color);
+    color: white;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    z-index: 9999;
+}
+
+/* start page builder button */
+.fixed-page-builder-btn {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.page-builder-btn {
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--bottom-button-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.page-builder-btn:hover {
+    color: #fff;
+    background-color: var(--bottom-button-hover-color);
+}
+/* end page builder button */
+
+.btn-whatsapp-pulse:hover {
+    color: #fff;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(33, 37, 41, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 14px rgba(33, 37, 41, 0);
+    }
+}
+
+.btn-whatsapp-pulse-border {
+    bottom: 160px;
+    right: 20px;
+    animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border-2 {
+    bottom: 240px;
+    right: 20px;
+    animation-play-state: paused;
+}
+
+.custom-color-black {
+    background-color: var(--bottom-button-color);
+}
+
+.custom-color-blue {
+    background-color: #1a8cd8;
+}
+
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* bottom whatsapp button */
+.mobile-widget-container {
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 999;
+}
+
+.mobile-widget-container a {
+    color: #fff;
+    background-color: var(--bottom-button-color);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.btn-icon i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.btn-icon:hover {
+    color: #fff;
+    background-color: var(--bottom-button-hover-color);
+}
+
+@media (max-width: 767px) {
+    .mobile-widget-container .btn-icon {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+.custom-category-link a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 22px;
+    color: var(--secondary-color);
+    margin-right: 10px;
+    border-radius: 100px;
+    display: inline-block;
+    background: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
+    box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
+}
+
+.custom-category-link a:hover, .custom-category-link a.current {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.image-size-100 {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .error-content img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.leaf {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .leaf {
+        right: 5%;
+        top: 22%;
+    }
+}
+
+.leaf-copy {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .leaf-copy {
+        left: 5%;
+        bottom: 3%;
+    }
+}
+
+.leaf-copy img {
+    max-width: 70%;
+}
+.theme-btn {
+    color: #FFF;
+    padding: 17px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}
+
+/* for career page*/
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.resume-item .body a, .resume-item .body i {
+    transition: all 0.5s ease;
+}
+.resume-item .body a {
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+.resume-item .body a i {
+    margin-top: 15px;
+    margin-left: 5px;
+    color: var(--main-color);
+}
+.resume-item .body a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.resume-item .body a:hover i {
+    margin-left: 10px;
+}
+.resume-item:hover .body a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.custom-color-light-black {
+    color: #6D7077;
+}
+
+/* start for youtube video*/
+.about-img:hover .about-video-btn-2 {
+    background: var(--secondary-color);
+}
+.about-img:hover .about-video-btn-2 ~ .video-border-line:after, .about-img:hover .about-video-btn-2 ~ .video-border-line:before {
+    border-color: var(--secondary-color);
+}
+.about-img .about-video-btn-2 {
+    top: 50%;
+    right: -40px;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    color: #fff;
+    transition: all 0.5s ease;
+    background: var(--main-color);
+    transform: translateY(-50%);
+}
+.about-img .about-video-btn-2:hover {
+    background: var(--secondary-color);
+}
+.about-img .about-video-btn-2:hover ~ .video-border-line:after, .about-img .about-video-btn-2:hover ~ .video-border-line:before {
+    border-color: var(--secondary-color);
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+    .about-img .about-video-btn-2 {
+        z-index: 1;
+    }
+    .about-img .about-video-btn-2, .about-img .video-border-line {
+        right: initial;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+body.rtl-mode .about-img .about-video-btn-2 {
+    right: initial;
+    left: -40px;
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query (576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 575.98px) {
+    body.rtl-mode .about-img .about-video-btn-2, body.rtl-mode .about-img .video-border-line {
+        right: initial;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+#borgsection .borgsection-inner .borgsection-video-btn-2 {
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.5s ease;
+    background: var(--main-color);
+    position: relative;
+}
+#borgsection .borgsection-inner .borgsection-video-btn-2:after, #borgsection .borgsection-inner .borgsection-video-btn-2:before {
+    top: 50%;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    transform: translateY(-50%);
+    border: 2px solid var(--main-color);
+}
+#borgsection .borgsection-inner .borgsection-video-btn-2:after {
+    right: -10px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+}
+#borgsection .borgsection-inner .borgsection-video-btn-2:before {
+    right: -20px;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+}
+body.rtl-mode #borgsection .borgsection-inner .borgsection-video-btn-2 i {
+    transform: rotate(180deg);
+    padding-left: 10px;
+}
+
+.web-design-process .design-process-video .design-process-video-btn-2 {
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.5s ease;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+}
+.web-design-process .design-process-video .design-process-video-btn-2 i {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    color: var(--main-color);
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.5s ease;
+    background: #fff;
+}
+.web-design-process .design-process-video .design-process-video-btn-2:hover {
+    border-color: var(--main-color);
+}
+.web-design-process .design-process-video .design-process-video-btn-2:hover i {
+    color: #fff !important;
+    background: var(--main-color);
+}
+body.rtl-mode .web-design-process .design-process-video .design-process-video-btn-2 i {
+    padding-left: 7px;
+    transform: rotate(180deg);
+}
+/* end for youtube video*/
+
+/*----------------------------------------*/
+/*  01 -  Easier Mode
+/*----------------------------------------*/
+.easier-mode {
+    position: relative;
+}
+
+.easier-mode .easier-section-area {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.easier-mode .easier-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.easier-mode:hover .easier-section-area {
+    opacity: 0.3;
+}
+
+.easier-mode:hover .easier-middle {
+    opacity: 1;
+}
+
+
+
+.modal-backdrop {
+    display: none;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.custom-btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.custom-btn:hover {
+    background-color: RoyalBlue;
+}
+
+.custom-font-icon {
+    color: white;
+}
+
+.easier-mode:hover {
+    background: #e1e1e1;
+    box-shadow: 0 0 0 2px #d0d0d0;
+}
+
+.sizing-for-logo:hover {
+    width: 160px;
+}
+
+.sizing-for-social:hover {
+    width: 260px;
+}

@@ -1,0 +1,25 @@
+.easier-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.easier-dropzone {
+    width: calc(50% - 1ch);
+    padding: 2ch;
+    border: 1px solid gray;
+}
+
+.easier-draggable {
+    border: 1px solid lightgray;
+    padding: 1.5ch;
+    background-color: #efefef;
+    cursor: move;
+
++ .easier-draggable {
+    margin-top: 1.5ch;
+}
+
+&.easier-is-dragging {
+     opacity: 0.5;
+ }
+}
